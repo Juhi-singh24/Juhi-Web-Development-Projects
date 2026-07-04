@@ -544,13 +544,13 @@ p{
 @media (max-width: 768px){
 
   #welcome{
-    width:100%;
+    width:100vw;
     min-height:100vh;
     position:relative;
   }
 
   #welcome h1{
-    font-size: 32px;
+    font-size: 31px;
     font-weight: bolder;
     top: 60px;
     left: 50%;
