@@ -470,8 +470,8 @@ p{
 @media (max-width: 768px){
 
   #taskform h1{
-    font-size: 32px;
-    top: 25px;
+    font-size: 34px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
