@@ -14,7 +14,6 @@
 
     function resetTaskform(){
       document.getElementById('Name').value = "";
-      document.getElementById('dueDate').value = "";
       document.getElementById('priority').value = "";
       document.getElementById('category').value = "";
     }
@@ -48,10 +47,9 @@
     function validateform(){
 
       let taskname = document.getElementById("Name").value;
-      let date = document.getElementById("dueDate").value;
       let Pri = document.getElementById("priority").value;
       let Cate = document.getElementById("category").value;
-      if (taskname.trim() != "" && date != "" && Pri != "" && Cate != ""){ 
+      if (taskname.trim() != "" && Pri != "" && Cate != ""){ 
       
       return true;
     }
@@ -61,14 +59,12 @@
   function addtask(){
 
     let taskname = document.getElementById("Name").value;
-    let date = document.getElementById("dueDate").value;
     let Pri = document.getElementById("priority").value;
     let Cate = document.getElementById("category").value;
 
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     let task = {
       name: taskname,
-      date: date,
       priority: Pri,
       category: Cate,
       status:"⌛Pending"
@@ -134,7 +130,6 @@
       
 
       card.innerHTML = `<h3>✨ ${tasks[i].name}</h3>
-                        <p>🗓️ ${tasks[i].date}</p>
                         <p>⚡${tasks[i].priority}</p>
                         <p>🏷️ ${tasks[i].category}</p>
                         <p>${tasks[i].status}</p>
@@ -174,7 +169,6 @@
       let task = tasks[index];
 
       document.getElementById("Name").value = task.name;
-      document.getElementById("dueDate").value = task.date;
       document.getElementById("priority").value = task.priority;
       document.getElementById("category").value = task.category;
 
@@ -186,14 +180,12 @@
 
   function updateTask(){
   let taskname = document.getElementById("Name").value;
-  let date = document.getElementById("dueDate").value;
   let Pri = document.getElementById("priority").value;
   let Cate = document.getElementById("category").value;
 
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
   tasks[editIndex].name = taskname;
-  tasks[editIndex].date = date;
   tasks[editIndex].priority = Pri;
   tasks[editIndex].category = Cate;
 
