@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main">
+
+    <div id="welcome">
+    <h1 id="heading">✨ Welcome to Taskflow ✨</h1>
+
+
+    <div class="container" id="box">
+      <p>✨Organise your day</p>
+      <p>🎯Stay focused</p>
+      <p>🚀Achieve more</p>
+    </div>
+
+    <button class="start"id="Started" onclick="showTaskForm();">👉 Get Started</button>
+
+    </div>
+
+    <div id="taskform">
+
+    <h1>💫 Add New Tasks 💫</h1>
+
+    <form onsubmit="return handleAddTask();">
+      <label for ="" id = "labeltask">Task Name</label>
+      <input type="text" placeholder="Enter task name" class="tasks" id="Name"required>
+      <br><br>
+      <label for="">Date</label>
+      <input type="date" class="tasks" id="dueDate" required>
+      <br><br>
+      <label for="">Priority</label>
+      <select class = "tasks" id="priority"required>
+        <option value="" selected disabled>Select priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select> 
+      <br><br>
+
+      <label for="">Category</label>
+      <select class="tasks" id="category" required>
+      <option value="" selected disabled>Select category</option>
+      <option value="Study">Study</option>
+      <option value="Work">Work</option> 
+      <option value="Personal">Personal</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Health">Health</option>
+      <option value="Others">Others</option> 
+      </select>  
+      <br>
+
+      <button type="submit" id="add">➕ Add task</button>
+    </form>
+
+    
+
+    </div>
+
+    <div id="dashboard">
+
+    </div>
+
+
+  </div>
+
+
+  <script src="taskflow.js"></script>
+  
+</body>
+</html>
