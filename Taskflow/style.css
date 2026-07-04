@@ -471,7 +471,7 @@ p{
 
   #taskform h1{
     font-size: 32px;
-    top: 12px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -483,7 +483,7 @@ p{
     width: 88%;
     max-width: 360px;
     height: auto;
-    top: 70px;
+    top: 130px;
     left: 50%;
     transform: translateX(-50%);
     padding: 25px 20px;
