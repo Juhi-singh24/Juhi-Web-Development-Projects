@@ -175,7 +175,6 @@ label{
   border:none;
   cursor:pointer;
   animation: pulse 1.5s infinite;
-  background
   transition:all 1.15s ease-in-out;
 }
 
@@ -374,103 +373,108 @@ p{
 }
 
 
+  @media (max-width: 768px) {
 
-
-  @media (max-width: 768px){
 
   #dashboard{
-    width:100%;
-    min-height:100vh;
-    padding: 0px;
-    margin-left:0;
-    gap:15px;
-    justify-content:center;
-    align-items:flex-start;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 0 12px 20px;
+    box-sizing: border-box;
   }
 
+  
   .summary-card{
-    width:100%;
-    flex-basis:100%;
-
-    
-    min-height:auto;
-    display:flex;
-    flex-direction:row;
-    align-items:flex-start;
-    justify-content:space-evenly;
-    padding-top: 12px;
-    padding-left: 7px;
-    padding-right: 5px;
-    gap:20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;              
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 12px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: auto;
     margin: 0;
-    position:sticky;
-    top:0px;
-    z-index:1000;
   }
 
   .summary-card p{
-    margin:0px;
-    font-size:20px;
-    text-align:center;
-    color:white;
+    flex: 1 1 30%;               
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.3;
+    text-align: center;
+    color: white;
   }
+
 
   .add{
-    font-size:13px;
-    padding:20px 12px;
-    border-radius:22px;
-    margin-bottom: 13px;
+    flex: 1 1 100%;
+    max-width: 180px;
+    margin: 6px auto 0;
+    display: block;
+    font-size: 16px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    text-align: center;
   }
 
+  
   .task-card{
-    width:100%;
-    max-width:340px;
+    width: 100%;
+    max-width: 340px;
+    min-height: auto;
     margin: 0;
-    gap:12px;
-    height:auto;
-    min-height:320px;
-    margin-left:12px;
-    margin-right: 12px;
-    padding:14px 10px 16px;
-  }
-
-  .task-card:hover{
-    transform: none;
+    margin-top: 8px;             
+    padding: 16px 12px;
+    box-sizing: border-box;
+    border-radius: 22px;
   }
 
   .task-card h3{
-    font-size:26px;
-    margin-top:10px;
-    margin-bottom:8px;
+    font-size: 24px;
+    margin: 8px 0 10px;
+    line-height: 1.3;
   }
 
   .task-card p{
-    font-size:20px;
-    margin:6px 0;
+    font-size: 18px;
+    margin: 6px 0;
+    line-height: 1.3;
   }
 
+  
   .btn-container{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:10px;
-    margin-bottom:6px;
-  }
-
-  .edit{
-    width:85%;
-    font-size:15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
   .delete,
-  .complete
-  {
-    width:40%;
-    min-width:110px;
-    margin-left:0;
-    font-size:15px;
-    padding:10px 0;
+  .complete{
+    width: 45%;
+    min-width: 120px;
+    margin-left: 0;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .edit{
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 0;
+    margin: 10px auto 0;
+    display: block;
   }
 }
 
