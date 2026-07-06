@@ -573,7 +573,7 @@ p{
     left: 50%;
     transform: translateX(-50%);
     width: 92%;
-    max-width: 230px;
+    max-width: 260px;
     min-height: 250px;
     height: auto;
     padding: 22px 16px;
@@ -592,7 +592,7 @@ p{
   .start {
     position: absolute;
     top: 430px;
-    left: 27%;
+    left: 28%;
     transform: translateX(-50%);
     padding: 14px 26px;
     font-size: 16px;
